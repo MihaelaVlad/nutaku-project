@@ -1,0 +1,38 @@
+// bootstrap
+@import './../node_modules/bootstrap/scss/bootstrap';
+
+// fonts
+@import './fonts';
+
+// variables
+@import './variables';
+
+// shared
+@import './shared/index';
+
+// golden-week
+@import './golden-week/index';
+
+// reset
+@import './reset';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  background: url('/images/background/grass.png') no-repeat center center,
+    $brand-tertiary;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+  }
+}

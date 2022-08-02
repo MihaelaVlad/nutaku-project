@@ -1,0 +1,158 @@
+.sign-up {
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0;
+    margin-top: 265px;
+    position: relative;
+    box-shadow: 0px 4px 9px rgba($black, 0.5);
+
+    .week-offer {
+      position: absolute;
+      top: -235px;
+
+      @media (min-width: 769px) {
+        top: -200px;
+      }
+    }
+
+    .image-offer {
+      width: 100%;
+
+      @media (min-width: 769px) {
+        width: auto;
+      }
+    }
+
+    .modal-header {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      text-align: center;
+      font-family: 'Gotham', sans-serif;
+      border: none;
+
+      .modal-title {
+        position: absolute;
+        text-transform: uppercase;
+        top: -35px;
+        background-color: $brand-main;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: 400;
+        color: $white;
+        clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
+        height: 66px;
+        width: 310px;
+      }
+
+      .on {
+        display: none;
+
+        @media (min-width: 1024px) {
+          display: block;
+        }
+      }
+
+      .sale-on {
+        display: block;
+
+        @media (min-width: 1024px) {
+          display: none;
+        }
+      }
+
+      div {
+        margin-top: 35px;
+      }
+
+      .modal-subtitle {
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: 700;
+        font-style: italic;
+        color: $brand-main;
+      }
+
+      .free-games {
+        display: none;
+
+        @media (min-width: 1024px) {
+          display: block;
+        }
+      }
+
+      .offers {
+        display: block;
+
+        @media (min-width: 1024px) {
+          display: none;
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .modal-body {
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+      }
+
+      .input-style {
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid $gray;
+
+        &::placeholder {
+          font-family: 'Arial', sans-serif;
+          padding-left: 10px;
+          color: $gray;
+        }
+      }
+
+      .play-button {
+        width: 100%;
+        margin-top: 25px;
+      }
+
+      .account {
+        margin-top: 35px;
+        font-family: 'Arial', sans-serif;
+        font-weight: 400;
+        text-align: center;
+
+        a {
+          padding-left: 5px;
+          color: $brand-main;
+          text-decoration: 1px underline $brand-main;
+        }
+      }
+
+      .news-terms {
+        margin-top: 74px;
+        margin-bottom: 20px;
+
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 15px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
