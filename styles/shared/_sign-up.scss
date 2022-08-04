@@ -1,19 +1,30 @@
 .sign-up {
+  margin-top: 32px;
+
   .modal-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 0;
     margin-top: 265px;
+    border: none;
     position: relative;
     box-shadow: 0px 4px 9px rgba($black, 0.5);
+
+    @media (min-width: 1024px) {
+      margin-top: 200px;
+    }
 
     .week-offer {
       position: absolute;
       top: -235px;
 
       @media (min-width: 769px) {
-        top: -200px;
+        top: -150px;
+      }
+
+      @media (min-width: 1024px) {
+        top: -130px;
       }
     }
 
@@ -31,6 +42,7 @@
       gap: 25px;
       text-align: center;
       font-family: 'Gotham', sans-serif;
+      padding-bottom: 0;
       border: none;
 
       .modal-title {
@@ -47,6 +59,11 @@
         clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%, 15% 50%);
         height: 66px;
         width: 310px;
+
+        @media (min-width: 1024px) {
+          font-size: 69px;
+          width: 420px;
+        }
       }
 
       .on {
@@ -70,11 +87,16 @@
       }
 
       .modal-subtitle {
+        font-size: 36px;
         text-transform: uppercase;
         font-size: 36px;
         font-weight: 700;
         font-style: italic;
         color: $brand-main;
+
+        @media (min-width: 1024px) {
+          font-size: 25px;
+        }
       }
 
       .free-games {
@@ -108,18 +130,26 @@
         justify-content: center;
         gap: 20px;
         width: 100%;
+
+        @media (min-width: 1024px) {
+          gap: 30;
+        }
       }
 
       .input-style {
         width: 100%;
         height: 50px;
+        padding-left: 10px;
         border-radius: 5px;
         border: 1px solid $gray;
 
         &::placeholder {
           font-family: 'Arial', sans-serif;
-          padding-left: 10px;
           color: $gray;
+        }
+
+        &:focus {
+          outline: 1px solid $brand-secondary;
         }
       }
 
@@ -129,10 +159,15 @@
       }
 
       .account {
-        margin-top: 35px;
+        margin-top: 40px;
         font-family: 'Arial', sans-serif;
         font-weight: 400;
         text-align: center;
+        color: $brand-secondary;
+
+        @media (min-width: 1024px) {
+          margin-top: 23px;
+        }
 
         a {
           padding-left: 5px;
@@ -144,6 +179,12 @@
       .news-terms {
         margin-top: 74px;
         margin-bottom: 20px;
+        color: $brand-main;
+        letter-spacing: -1px;
+
+        @media (min-width: 1024px) {
+          margin-top: 52px;
+        }
 
         div {
           display: flex;

@@ -11,19 +11,25 @@ export default function Home() {
         <title>Golden Sale Week</title>
       </Head>
 
-      <div
-        data-bs-toggle="modal"
-        data-bs-target="#signUp"
-        data-backdrop="static"
-        data-keyboard="false"
-      >
+      <div>
         <Header></Header>
+
         <main>
           <GamesPreview></GamesPreview>
 
           <SignUp></SignUp>
         </main>
+
         <Footer></Footer>
+
+        <div className="form-signup">
+          <a
+            data-bs-toggle="modal"
+            data-bs-target="#signUp"
+            data-backdrop="static"
+            data-keyboard="false"
+          ></a>
+        </div>
       </div>
     </div>
   );

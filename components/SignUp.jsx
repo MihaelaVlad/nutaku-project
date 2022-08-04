@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function SignUp() {
   return (
-    <section className="sign-up container mt-5">
+    <section className="sign-up container">
       <div
         className="modal fade"
         id="signUp"
